@@ -1,0 +1,23 @@
+.card {
+  min-width: 30vw;
+  padding: 30px;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, rgb(19, 18, 19), rgb(19, 18, 19)),
+    linear-gradient(to bottom, #050066, #320061, #550094, #bb0000) border-box;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.background {
+  background: linear-gradient(to bottom, #000000e1, #01040fe1) border-box;
+}
+
+.forgot-password {
+  width: fit-content;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.664);
+  font-size: small;
+  cursor: pointer;
+}

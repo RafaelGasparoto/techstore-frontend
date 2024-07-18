@@ -1,0 +1,24 @@
+.input {
+  border-radius: 50em;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+input::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.expanded-border {
+  --outline: 2px solid #2d0080;
+  outline: var(--outline);
+  border: var(--outline);
+  outline-offset: -2px;
+  transition: outline-width 100ms ease, outline-offset 100ms ease;
+}
+
+.expanded-border:hover {
+  outline: var(--outline);
+  outline-width: 4px;
+  outline-offset: -2px;
+}
