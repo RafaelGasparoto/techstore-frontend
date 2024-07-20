@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Product } from '../../models/Product';
 import { CurrencyFormatPipe } from "../../pipes/currency-format.pipe";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'products-list',
   standalone: true,
-  imports: [CommonModule, CurrencyFormatPipe],
+  imports: [CommonModule, CurrencyFormatPipe, RouterLink],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
 })
