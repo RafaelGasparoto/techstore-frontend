@@ -1,6 +1,11 @@
+@use '@angular/material' as mat;
+
+@font-face {
+  font-family: 'Venite';
+  src: url('./assets/fonts/venite.ttf');
+}
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -14,6 +19,10 @@ $techstore-theme: mat.define-theme((
     theme-type: light,
     primary: mat.$azure-palette,
     tertiary: mat.$blue-palette,
+  ),
+  typography: (
+    brand-family: Gamer,
+    bold-weight: 900
   ),
   density: (
     scale: 0,
@@ -35,5 +44,13 @@ $techstore-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($techstore-theme);
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body {
+  height: 100%;
+}
+body { margin: 0; font-family: Venite, Roboto, "Helvetica Neue", sans-serif !important; }
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
