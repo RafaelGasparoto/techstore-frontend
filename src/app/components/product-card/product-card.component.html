@@ -1,0 +1,17 @@
+<div class="card bg-dark text-white" [routerLink]="['/product-detail', product.id]">
+  <img class="w-100 shine" src="../../../assets/images/mouse_2.jpg">
+  <div class="my-2 shine" style="min-height: 30px;">
+    {{product.name}}
+  </div>
+  <div class="promo my-1 shine">
+    <div [ngStyle]="{'visibility': product.promoPrice != 0 ? 'visible' : 'hidden'}">
+      de <span>{{product.price | currencyFormat}}</span> por:
+    </div>
+  </div>
+  <div class="price shine">
+    <div>
+      à vista
+    </div>
+    {{product.price - product.promoPrice | currencyFormat}}
+  </div>
+</div>

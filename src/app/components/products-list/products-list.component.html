@@ -3,22 +3,8 @@
   </div>
   <div class="col-8">
     <div class="w-100 row my-3">
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-4" *ngFor="let item of products">
-        <div class="card bg-dark text-white h-100" [routerLink]="['/product-detail', item.id]">
-          <img class="h-100" src="../../../assets/images/mouse_2.jpg">
-          <div class="my-2">
-            {{item.name}}
-          </div>
-          <div class="promo my-1" [ngStyle]="{'visibility': item.promoPrice != 0 ? 'visible' : 'hidden'}">
-            de <span>{{item.price | currencyFormat}}</span> por:
-          </div>
-          <div class="price">
-            <div>
-              à vista
-            </div>
-            {{item.price - item.promoPrice | currencyFormat}}
-          </div>
-        </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-4" *ngFor="let product of products">
+        <product-card [product]="product"></product-card>
       </div>
     </div>
   </div>
