@@ -36,7 +36,7 @@ export class LoginPageComponent {
     this.loading = true;
     setTimeout(() => {
       this.loading = false;
-      this.router.navigate(['/home']);
+      this.router.navigate(['']);
     }, 1000);
   }
 }

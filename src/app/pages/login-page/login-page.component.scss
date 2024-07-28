@@ -10,14 +10,14 @@
   text-align: center;
 }
 
-.background {
-  background: linear-gradient(to bottom, #000000e1, #01040fe1) border-box;
-}
-
 .forgot-password {
   width: fit-content;
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.664);
   font-size: small;
   cursor: pointer;
+}
+
+.center-align {
+  margin-top: calc(60vh / 2);
 }
