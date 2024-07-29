@@ -21,24 +21,26 @@
 
 
 @media only screen and (max-width: 620px) {
-  .img {
-    width: 250px;
-    height: 250px;
+  img {
+    max-width:100%;
   }
 }
 
 @media only screen and (min-width: 620px) {
-  .img {
-    width: 400px;
-    height: 400px;
+  img {
+    max-width: 60% !important;
   }
 }
 
 @media only screen and (min-width: 990px) {
-  .img {
-    height: 100%;
-    width: 100%;
-    max-width: 450px;
-    max-height: 450px;
+  img {
+    max-width:90% !important;
   }
+}
+
+img {
+  display: block;
+  // max-height:100%;
+  width: auto;
+  height: auto;
 }
