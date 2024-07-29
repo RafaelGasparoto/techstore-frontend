@@ -17,11 +17,6 @@ export class ProductCardComponent implements OnInit {
   constructor(private render: Renderer2) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      const elements = document.getElementsByClassName('shine');
-      for (let index = 0; index < elements.length; index++) {
-        this.render.removeClass(elements[index], 'shine');
-      }
-    }, 5000);
+
   }
 }
