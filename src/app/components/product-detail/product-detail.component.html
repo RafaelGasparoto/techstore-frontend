@@ -1,8 +1,8 @@
-<div class="row text-white">
+<div class="row">
   <div class="col-md-8 offset-md-2 col-10 offset-1">
     <div class="row">
       <div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center">
-        <img src="../../../assets/images/mouse_2.jpg" alt="">
+        <img src="../../../assets/images/mouse_2.jpg">
       </div>
       <div class="col-lg-5 offset-lg-1 col-12 mt-4 mt-lg-0 p-3 d-flex flex-column product-details">
         <h4>
@@ -12,26 +12,28 @@
           {{product.description}}
         </div>
         <div class="promo my-1" [ngStyle]="{'visibility': product.promoPrice != 0 ? 'visible' : 'hidden'}">
-          de <span>{{product.price | currencyFormat}}</span> por:
+          <div>
+            de <span>{{product.price | currencyFormat}}</span> por:
+          </div>
         </div>
         <div class="price">
           <div>
             à vista
             {{product.price - product.promoPrice | currencyFormat}}
           </div>
-          <div class="text-white">
+          <div>
             ou 12x {{product.price / 12 | currencyFormat}}
           </div>
         </div>
-         <div class="d-flex flex-column justify-content-end" style="flex: 2">
+        <div class="d-flex flex-column justify-content-end" style="flex: 2">
           <div class="my-1">
-            <custom-button label="Comprar"></custom-button>
+            <custom-button label="Comprar" (clicked)="buy()"></custom-button>
           </div>
           <div class="my-1">
             <custom-button label="Adicionar ao carrinho" color="#FFFFFF"></custom-button>
-         </div>
-         </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
@@ -40,5 +42,5 @@
   <img src="../../../assets/images/mouse_2.jpg" alt="Image 1">
   <img src="../../../assets/images/mouse_2.jpg" alt="Image 2">
   <img src="../../../assets/images/mouse_2.jpg" alt="Image 3"> -->
-  <!-- Add more images as needed -->
+<!-- Add more images as needed -->
 <!-- </div> -->

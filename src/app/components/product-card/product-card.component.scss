@@ -14,19 +14,23 @@
 }
 
 .price {
-  color: #39ff11;
   font-size: 1em;
   min-height: 40px;
-  div {
+  :first-child {
     font-size: 0.6em;
+  }
+  * {
+    color: #39ff11;
   }
 }
 
 .promo {
-  color: #f00;
   font-size: 0.7em;
   min-height: 20px;
   span {
     text-decoration: line-through;
+  }
+  * {
+    color: #f00;
   }
 }

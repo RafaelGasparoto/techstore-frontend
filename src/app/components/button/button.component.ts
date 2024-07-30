@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
@@ -15,4 +15,5 @@ export class ButtonComponent {
   @Input() loading: boolean = false;
   @Input() icon: string = '';
   @Input() color: string = '#39ff11';
+  @Output() clicked: EventEmitter<any> = new EventEmitter();
 }

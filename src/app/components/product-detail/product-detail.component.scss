@@ -1,16 +1,20 @@
 .price {
-  color: #39ff11;
   font-size: 1.2em;
   :last-child {
     font-size: 0.7em;
   }
+  :first-child {
+    color: #39ff11;
+  }
 }
 
 .promo {
-  color: #F00;
   font-size: 0.7em;
   span {
     text-decoration: line-through;
+  }
+  * {
+    color: #f00;
   }
 }
 
@@ -19,10 +23,9 @@
   border-radius: 0.5em;
 }
 
-
 @media only screen and (max-width: 620px) {
   img {
-    max-width:100%;
+    max-width: 100%;
   }
 }
 
@@ -34,13 +37,12 @@
 
 @media only screen and (min-width: 990px) {
   img {
-    max-width:90% !important;
+    max-width: 90% !important;
   }
 }
 
 img {
   display: block;
-  // max-height:100%;
   width: auto;
   height: auto;
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from '../../models/Product';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ButtonComponent } from "../button/button.component";
 import { CurrencyFormatPipe } from "../../pipes/currency-format.pipe";
 import { CommonModule } from '@angular/common';
@@ -15,12 +15,18 @@ import { CommonModule } from '@angular/common';
 export class ProductDetailComponent {
   product: Product;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
     const id = this.activatedRoute.snapshot.params["id"];
     this.product = this.mock(id);
   }
 
   mock(id: number) {
     return new Product(id, 1, 'Produto nome', 'descrição', 10.31 + id, 10.44 - id, 100 - id);
+  }
+
+  buy(): void {
+    setTimeout(() => {
+      this.router.navigate(['/cart']);
+    }, 200);
   }
 }

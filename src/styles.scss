@@ -50,10 +50,14 @@ html {
   height: auto;
   min-height: 100vh;
 }
+
 body {
   min-height: 100%;
   margin: 0;
   font-family: Venite, Roboto, "Helvetica Neue", sans-serif !important;
+  * {
+    color: white;
+  }
 }
 
 .row {

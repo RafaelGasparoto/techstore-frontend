@@ -1,9 +1,9 @@
-<div class="card bg-dark text-white" [routerLink]="['/product-detail', product.id]">
+<div class="card bg-dark" [routerLink]="['/product-detail', product.id]">
   <img sytle="flex: 7;" src="../../../assets/images/mouse_2.jpg">
   <div class="my-2" style="flex: 1">
     {{product.name}}
   </div>
-  <div class="promo my-1" style="flex: 1">
+  <div class="my-1 promo" style="flex: 1">
     <div [ngStyle]="{'visibility': product.promoPrice != 0 ? 'visible' : 'hidden'}">
       de <span>{{product.price | currencyFormat}}</span> por:
     </div>
@@ -12,6 +12,8 @@
     <div>
       à vista
     </div>
-    {{product.price - product.promoPrice | currencyFormat}}
+    <div>
+      {{product.price - product.promoPrice | currencyFormat}}
+    </div>
   </div>
 </div>

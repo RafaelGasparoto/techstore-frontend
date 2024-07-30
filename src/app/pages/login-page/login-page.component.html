@@ -1,7 +1,7 @@
 <div class="h-100 d-flex justify-content-center center-align">
   <form [formGroup]="this.form" (ngSubmit)="tryLogin()">
     <div class="card bg-dark">
-      <h1 class="text-white mb-3">Login</h1>
+      <h1 class="mb-3">Login</h1>
       <custom-input placeholder="Usuário" [control]="form.get('user')!"></custom-input>
       <custom-input placeholder="Senha" [control]="form.get('password')!"></custom-input>
       <div class="forgot-password d-flex align-self-end">Esqueceu sua senha?</div>
