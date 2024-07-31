@@ -1,17 +1,17 @@
 button {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 0px;
   cursor: pointer;
   font-size: inherit;
   border: 0;
   border-radius: 50em;
   background: none;
-  width: 3em;
-  height: 3em;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  padding: 10px;
   margin: 4px 2px;
+  overflow: hidden;
 }
 
 .button-border {

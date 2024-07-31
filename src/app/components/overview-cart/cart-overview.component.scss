@@ -1,0 +1,10 @@
+.overview-item {
+  display: flex;
+  margin: 10px 0px;
+  * {
+    flex: 1;
+  }
+  :last-child {
+    text-align: end;
+  }
+}
