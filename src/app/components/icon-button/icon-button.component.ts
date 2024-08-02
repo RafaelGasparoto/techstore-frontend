@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -13,4 +13,6 @@ export class IconButtonComponent {
   @Input() icon: string = '';
   @Input() color: string = '#2ba2da';
   @Input() buttonSize: string = '3';
+  @Input() iconSize: string = '20';
+  @Output() click: EventEmitter<any> = new EventEmitter();
 }

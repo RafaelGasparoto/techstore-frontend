@@ -28,3 +28,10 @@ button {
   outline-width: 4px;
   outline-offset: -4px;
 }
+
+.mat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--icon-size);
+}
