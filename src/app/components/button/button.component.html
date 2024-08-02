@@ -1,5 +1,5 @@
-<button class="my-2 py-1 px-3 button-border d-flex justify-content-center" style="--clr: {{color}}" [type]="type"
-  (click)="this.clicked.emit()">
+<button class="my-2 py-1 px-3 button-border" style="--clr: {{color}}" [type]="type"
+  (click)="this.click.emit()">
   <span *ngIf="loading" class="spinner-border spinner-border-sm"></span>
   <div class="overflow-x-hidden d-inline">
     {{ label }}

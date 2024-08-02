@@ -1,5 +1,6 @@
 button {
-  display: flex;
+  display: flex !important;
+  height: auto;
   justify-content: center;
   align-items: center;
   * {
@@ -10,7 +11,7 @@ button {
   }
   cursor: pointer;
   text-decoration: none;
-  font-size: inherit;
+  font-size: 13px;
   border: 0;
   border-radius: 50em;
   background: none;

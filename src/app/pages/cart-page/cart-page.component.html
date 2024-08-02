@@ -7,13 +7,6 @@
       <div class="col-lg-8 col-12">
         <div class="mx-lg-3 mx-0 mb-4 standard-card cart-list">
           <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
-          <cart-item></cart-item>
         </div>
       </div>
       <div class="col-lg-4 col-12 h-100 sticky-top">
@@ -22,13 +15,12 @@
         </div>
       </div>
     </div>
-    <div class="row g-0">
-      <div class="col">
-        t
+    <div class="standard-card row g-0 p-2 d-flex align-items-center">
+      <div class="col-12 col-md-3">
+        Calcule o frete:
       </div>
-      <div class="col">
-        t
-      </div>
+      <custom-input class="col-12 col-md-4 offset-md-2 float-end" [control]="form.get('cep')!" placeholder="Cep"></custom-input>
+      <custom-button class="col-12 col-md-3 float-end" label="Calcular"></custom-button>
     </div>
   </div>
 </div>
