@@ -70,3 +70,9 @@ body {
   background: linear-gradient(to bottom, #000000e1, #01040fe1) border-box
     no-repeat;
 }
+
+.standard-card {
+  border: 1px solid rgba(119, 119, 119, 0.226);
+  border-radius: 7px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
