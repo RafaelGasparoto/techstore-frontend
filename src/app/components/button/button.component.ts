@@ -15,5 +15,5 @@ export class ButtonComponent {
   @Input() loading: boolean = false;
   @Input() icon: string = '';
   @Input() color: string = '#39ff11';
-  @Output() clicked: EventEmitter<any> = new EventEmitter();
+  @Output() click: EventEmitter<any> = new EventEmitter();
 }
