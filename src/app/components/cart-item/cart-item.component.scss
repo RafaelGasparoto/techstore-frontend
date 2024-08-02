@@ -2,10 +2,29 @@ img {
   display: block;
 }
 
+.infos-item {
+  padding: 0 10px;
+  :first-child {
+    font-size: 13px;
+  }
+  :last-child{
+    font-size: 8px;
+    margin-top: 15px;
+    color: rgba(167, 167, 167, 0.486);
+  }
+}
+
 .quantity {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.item-price {
+  font-size: 10px;
+  :last-child {
+    color: #39ff11;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -15,10 +34,17 @@ img {
   }
 }
 
-
 @media only screen and (min-width: 620px) {
   img {
     width: 125px;
     height: 125px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  img {
+    width: 95px;
+    height: 95px;
   }
 }
