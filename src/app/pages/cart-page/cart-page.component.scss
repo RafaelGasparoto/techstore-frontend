@@ -10,5 +10,12 @@
 
 .header {
   letter-spacing: 10px;
-  text-align: center;
+  cursor: pointer;
+}
+
+.profile {
+  width: 2em;
+  height: 2em;
+  border-radius: 50em;
+  border: 1px solid white;
 }
